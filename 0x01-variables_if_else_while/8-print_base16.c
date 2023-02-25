@@ -9,8 +9,8 @@ int main(void)
 	int i;
 	char lc;
 
-	for (i = 0; i < 16; i++)
-		putchar((i % 16) + '0');
+	for (i = 0; i < 10; i++)
+		putchar((i % 10) + '0');
 
 	for (lc = 'a'; lc <= 'f'; lc++)
 		putchar(lc);
