@@ -6,6 +6,7 @@
  */
 
 int main(void)
+{
 
 	int j, z = 0;
 
@@ -17,6 +18,6 @@ int main(void)
 	}
 	j++;
 	}
-	_putchar(z);
+	printf("%d\n", z);
 	return (0);
 }
