@@ -4,6 +4,7 @@
 /**
  * create_array - creates an aray of chars
  * @size: The size of the array
+ * @c: character to print
  * Return: the array filled
  */
 char *create_array(unsigned int size, char c)
