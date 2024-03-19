@@ -3,8 +3,6 @@
 /**
  * rev_string - Reverses a string.
  * @s: The string to be reversed.
- *
- * Return: void
  */
 void rev_string(char *s)
 {
@@ -14,9 +12,7 @@ void rev_string(char *s)
 
     /* Find the length of the string */
     while (s[length] != '\0')
-    {
         length++;
-    }
 
     /* Set start and end indexes for swapping */
     start = 0;
