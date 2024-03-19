@@ -1,18 +1,20 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * _puts - Prints a string followed by a new line
- * @str: The string to be printed
+ * _puts - Prints a string followed by a new line to stdout.
+ * @str: The string to be printed.
  *
- * Description: This function prints each character of the string `str` until
- * it reaches the null terminator '\0', then prints a new line.
+ * Return: void
  */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i = 0;
+
+	while (str[i] != '\0')
 	{
-		putchar(*str);
-		str++;
+		write(1, &str[i], 1);
+		i++;
 	}
-	putchar('\n');
+	write(1, "\n", 1);
 }
