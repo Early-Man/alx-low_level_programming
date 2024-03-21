@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stddef.h>
 
 /**
@@ -8,16 +7,15 @@
  */
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
 	if (str == NULL)
 		return;
 
-	i = 0;
 	while (str[i] != '\0')
 	{
-		printf("%c ", str[i]);
+		_putchar(str[i]);
 		i += 2;
 	}
-	printf("\n");
+	_putchar('\n');
 }
